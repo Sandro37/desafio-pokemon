@@ -1,6 +1,8 @@
+var token = 'insira seu token aqui';
+
 async function request(cidade) {
     try {
-        var response = await fetch('https://api.openweathermap.org/data/2.5/weather?q='+ cidade + '&appid=d4ee1a18806ab9ba3bc5d5c01d36f2c0');
+        var response = await fetch('https://api.openweathermap.org/data/2.5/weather?q='+ cidade + '&appid=' + token);
 
         console.log(response.status);
 
